@@ -11,7 +11,7 @@ var majorityElement = function(nums) {
             counter.set(nums[i],counter.get(nums[i])+1)
         }
     }
-    console.log(counter)
+
     let maxValue = 0;
     let maxKey =0
     counter.forEach((value, key, map) => {
