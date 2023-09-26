@@ -4,9 +4,12 @@
  */
 var isPalindrome = function(x) {
     let arr = x.toString().split("")
-    let nums = arr.join()
-    let arrR = arr.reverse().join()
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]!=arr[arr.length-1-i]){
+            return false
+        }
+    }
 
 
-    return arrR === nums ? true:false
+    return true
 };
